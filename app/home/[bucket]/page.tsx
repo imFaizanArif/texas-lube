@@ -5,6 +5,7 @@ import { CategoriesSection } from "app/home/_components/categories-section"
 import { FeaturedProductsSection } from "app/home/_components/featured-products-section"
 import { getFeaturedProducts } from "lib/algolia"
 import HeroSlider from "components/carousel"
+import AboutUs from "components/about"
 
 export const revalidate = 86400
 
@@ -34,6 +35,7 @@ export default async function Homepage(props: { params: Promise<{ bucket: string
       <CategoriesSection /> */}
       {/* <HeroSlid */}
       <HeroSlider />
+      <AboutUs />
     </div>
   )
 }

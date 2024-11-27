@@ -297,7 +297,7 @@ export const getFilteredProducts = unstable_cache(
 
       return { hits, totalPages, facetDistribution, totalHits, independentFacetDistribution }
     } catch (err) {
-      console.error(err)
+      //console.error(err)
       return { hits: [], totalPages: 0, facetDistribution: {}, totalHits: 0, independentFacetDistribution: {} }
     }
   },

@@ -22,46 +22,46 @@ export async function GET(req: Request) {
   }
 
   if (isDemoMode() || !env.ALGOLIA_REVIEWS_INDEX) {
-    console.error({
-      message: "Lacking environment variables",
+    //console.error({
+    message: "Lacking environment variables",
       source: "api/reviews/sync",
     })
-    return new Response(JSON.stringify({ message: "Sorry, something went wrong" }), { status: 500 })
-  }
+  return new Response(JSON.stringify({ message: "Sorry, something went wrong" }), { status: 500 })
+}
 
-  const [allReviews, { hits: allProducts }, { reviews }] = await Promise.all([
-    getAllProductReviews(),
-    getAllProducts({
-      fields: ["handle", "title", "avgRating", "totalReviews"],
-    }),
-    getAllReviews({
-      fields: ["updated_at", "id"],
-    }),
-  ])
+const [allReviews, { hits: allProducts }, { reviews }] = await Promise.all([
+  getAllProductReviews(),
+  getAllProducts({
+    fields: ["handle", "title", "avgRating", "totalReviews"],
+  }),
+  getAllReviews({
+    fields: ["updated_at", "id"],
+  }),
+])
 
-  const reviewsDelta = allReviews.filter((review) => {
-    const indexReview = reviews?.find((r) => r.id === review.id)
-    return indexReview?.updated_at !== review.updated_at
+const reviewsDelta = allReviews.filter((review) => {
+  const indexReview = reviews?.find((r) => r.id === review.id)
+  return indexReview?.updated_at !== review.updated_at
+})
+
+const productTotalReviewsDelta = allProducts
+  ?.map((product) => {
+    const productReviews = allReviews.filter((review) => review.product_handle === product.handle && review.published && !review.hidden)
+    if (!!productReviews.length && productReviews.length !== product.totalReviews) {
+      const avgRating = productReviews.reduce((acc, review) => acc + review.rating, 0) / productReviews.length || 0
+      return { ...product, avgRating, totalReviews: productReviews.length }
+    }
+
+    return null
   })
+  .filter(Boolean)
 
-  const productTotalReviewsDelta = allProducts
-    ?.map((product) => {
-      const productReviews = allReviews.filter((review) => review.product_handle === product.handle && review.published && !review.hidden)
-      if (!!productReviews.length && productReviews.length !== product.totalReviews) {
-        const avgRating = productReviews.reduce((acc, review) => acc + review.rating, 0) / productReviews.length || 0
-        return { ...product, avgRating, totalReviews: productReviews.length }
-      }
+if (!reviewsDelta.length && !productTotalReviewsDelta?.length) {
+  return new Response(JSON.stringify({ message: "Nothing to sync" }), { status: 200 })
+}
 
-      return null
-    })
-    .filter(Boolean)
+!!reviewsDelta.length && updateReviews(reviewsDelta)
+!!productTotalReviewsDelta?.length && updateProducts(productTotalReviewsDelta)
 
-  if (!reviewsDelta.length && !productTotalReviewsDelta?.length) {
-    return new Response(JSON.stringify({ message: "Nothing to sync" }), { status: 200 })
-  }
-
-  !!reviewsDelta.length && updateReviews(reviewsDelta)
-  !!productTotalReviewsDelta?.length && updateProducts(productTotalReviewsDelta)
-
-  return new Response(JSON.stringify({ message: "All synced" }), { status: 200 })
+return new Response(JSON.stringify({ message: "All synced" }), { status: 200 })
 }

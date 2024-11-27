@@ -67,7 +67,7 @@ async function sync() {
 
     console.log("🎉 Sync completed successfully!")
   } catch (error) {
-    console.error("❌ Error during sync:", error instanceof Error ? error.message : error)
+    //console.error("❌ Error during sync:", error instanceof Error ? error.message : error)
     throw error
   }
 }
@@ -117,6 +117,6 @@ sync()
     process.exit(0)
   })
   .catch((error) => {
-    console.error("💥 Sync process failed:", error)
+    //console.error("💥 Sync process failed:", error)
     process.exit(1)
   })

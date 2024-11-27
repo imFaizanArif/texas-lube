@@ -43,7 +43,7 @@ const EmblaCarousel = (props) => {
                         <div className="embla__slide" key={index}>
                             <div className="embla__slide__number">
                                 <Image src={item.img} alt={item.title} width={800} height={500} className='object-fill w-full h-auto -z-20' />
-                                <p className='text-center text-red-600 text-6xl absolute left-48 top-48'>{item.title}</p>
+                                {/* <p className='text-center text-red-600 text-6xl absolute left-48 top-48'>{item.title}</p> */}
                             </div>
                         </div>
                     ))}

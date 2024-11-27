@@ -69,7 +69,7 @@ async function handleRedirectsMiddleware(request: NextRequest) {
       }
     }
   } catch (error) {
-    console.error(error)
+    //console.error(error)
   }
 }
 
