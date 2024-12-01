@@ -36,14 +36,15 @@ export async function GET(req: Request) {
     const res = notifyOptIn({ feature: "ai-reviews", source: "api/reviews/ai-summary" })
     return new Response(JSON.stringify(res), { status: 200 })
   }
-
-  if (isDemoMode() || !env.ALGOLIA_REVIEWS_INDEX) {
-    //console.error({
+ 
+if (isDemoMode() || !env.ALGOLIA_REVIEWS_INDEX) {
+  console.error({
     message: "Lacking environment variables",
-      source: "api/reviews/ai-summary",
-    })
+    source: "api/reviews/ai-summary",
+  })
   return new Response(JSON.stringify({ message: "Sorry, something went wrong" }), { status: 500 })
 }
+
 
 const [{ reviews }, allProducts] = await Promise.all([
   getAllReviews({

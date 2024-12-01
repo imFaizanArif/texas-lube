@@ -21,13 +21,15 @@ export async function GET(req: Request) {
     return new Response(JSON.stringify(res), { status: 200 })
   }
 
-  if (isDemoMode() || !env.ALGOLIA_REVIEWS_INDEX) {
-    //console.error({
+ 
+if (isDemoMode() || !env.ALGOLIA_REVIEWS_INDEX) {
+  console.error({
     message: "Lacking environment variables",
-      source: "api/reviews/sync",
-    })
+    source: "api/reviews/sync",
+  })
   return new Response(JSON.stringify({ message: "Sorry, something went wrong" }), { status: 500 })
 }
+
 
 const [allReviews, { hits: allProducts }, { reviews }] = await Promise.all([
   getAllProductReviews(),
