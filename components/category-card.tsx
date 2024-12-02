@@ -12,19 +12,19 @@ export const CategoryCard = ({ image, title, index, className }: CategoryCardPro
   // const href = `/category/${handle}`
   return (
     // <Link href={href} className={cn("group relative overflow-hidden rounded-lg transition-all hover:shadow-md", className)} prefetch={false}>
-    <div className={cn("  rounded-lg transition-all hover:shadow-md w-[150px] h-[150px] text-center", className)}>
+    <div 
+    className="flex flex-col items-center justify-center bg-gray-100 p-4 rounded-lg min-w-[200px] shadow-md"
+    >
         <Image
           src={image?.url || `/category-placeholder-${index}.png`}
           alt={image?.altText || `${title} category`}
-          className="w-[120px] h-[120px]"
-          style={{
-            objectFit: "contain",
-          }}
-          fill
+          width={100}
+          height={100}
+          className="object-contain"
         />
         
       
-        <h3 className=" text-xl font-semibold text-black group-hover:text-[#BE2C29]">{title}</h3>
+        <h3 className="mt-4 text-center text-sm font-bold">{title}</h3>
       
     </div>
     // </Link>

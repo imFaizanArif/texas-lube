@@ -56,11 +56,11 @@ const categories =[
   if (categories?.length===0) return null
 
   return (
-    <div className="mt-20 bg-gray-50 px-4 py-20">
-      <div className="mx-auto w-full max-w-container-sm space-y-4">
-        <h2 className="mb-8 text-left text-4xl font-semibold">Featured Categories</h2>
-        <div className="flex gap-2 overflow-x-auto scrollbar-hide ">
-          {categories.map((category, index) => {
+    <div className="mt-20 bg-gray-50 px-4 py-10">
+      <div className="m-auto  max-w-container-md px-6 py-12">
+        <h2 className="mb-8 text-center text-4xl font-semibold"> Categories</h2>
+        <div className="flex gap-4 overflow-x-auto scrollbar-hide">
+        {categories.map((category, index) => {
             return (
               <CategoryCard
                 key={index}
