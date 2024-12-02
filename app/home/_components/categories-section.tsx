@@ -59,7 +59,7 @@ const categories =[
     <div className="mt-20 bg-gray-50 px-4 py-20">
       <div className="mx-auto w-full max-w-container-sm space-y-4">
         <h2 className="mb-8 text-left text-4xl font-semibold">Featured Categories</h2>
-        <div className="grid auto-rows-fr gap-4 sm:grid-cols-2">
+        <div className="flex gap-2 overflow-x-auto scrollbar-hide ">
           {categories.map((category, index) => {
             return (
               <CategoryCard

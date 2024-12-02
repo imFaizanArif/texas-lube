@@ -12,22 +12,20 @@ export const CategoryCard = ({ image, title, index, className }: CategoryCardPro
   // const href = `/category/${handle}`
   return (
     // <Link href={href} className={cn("group relative overflow-hidden rounded-lg transition-all hover:shadow-md", className)} prefetch={false}>
-    <div className={cn("group relative overflow-hidden rounded-lg transition-all hover:shadow-md", className)}>
-      <div className="relative aspect-video">
+    <div className={cn("  rounded-lg transition-all hover:shadow-md w-[150px] h-[150px] text-center", className)}>
         <Image
           src={image?.url || `/category-placeholder-${index}.png`}
           alt={image?.altText || `${title} category`}
-          className="transition-transform group-hover:scale-105"
+          className="w-[120px] h-[120px]"
           style={{
             objectFit: "contain",
           }}
           fill
         />
-        <div className="absolute left-0 top-0 z-10 size-full bg-gradient-to-b from-white/90 to-60%" />
-      </div>
-      <div className="absolute inset-x-4 top-0 z-20">
-        <h3 className="ml-3 mt-5 text-xl font-semibold text-black group-hover:text-orange-500">{title}</h3>
-      </div>
+        
+      
+        <h3 className=" text-xl font-semibold text-black group-hover:text-[#BE2C29]">{title}</h3>
+      
     </div>
     // </Link>
   )
