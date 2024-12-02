@@ -3,15 +3,16 @@ import Link from "next/link"
 import { PlatformCollection } from "lib/shopify/types"
 import { cn } from "utils/cn"
 
-interface CategoryCardProps extends Pick<PlatformCollection, "title" | "image" > {
+interface CategoryCardProps extends Pick<PlatformCollection, "title" | "image"> {
   index: number
+  className?: string
 }
- 
-export const CategoryCard = ({   image, title, index,  }: CategoryCardProps) => {
+
+export const CategoryCard = ({ image, title, index, className }: CategoryCardProps) => {
   // const href = `/category/${handle}`
   return (
     // <Link href={href} className={cn("group relative overflow-hidden rounded-lg transition-all hover:shadow-md", className)} prefetch={false}>
-      <div className={cn("group relative overflow-hidden rounded-lg transition-all hover:shadow-md")}>
+    <div className={cn("group relative overflow-hidden rounded-lg transition-all hover:shadow-md", className)}>
       <div className="relative aspect-video">
         <Image
           src={image?.url || `/category-placeholder-${index}.png`}
@@ -27,7 +28,7 @@ export const CategoryCard = ({   image, title, index,  }: CategoryCardProps) => 
       <div className="absolute inset-x-4 top-0 z-20">
         <h3 className="ml-3 mt-5 text-xl font-semibold text-black group-hover:text-orange-500">{title}</h3>
       </div>
-      </div>
+    </div>
     // </Link>
   )
 }
