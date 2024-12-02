@@ -3,12 +3,57 @@ import { cn } from "utils/cn"
 import { getCategories } from "lib/algolia"
 
 export async function CategoriesSection() {
-  const { hits: categories } = await getCategories({
-    hitsPerPage: 4,
-    attributesToRetrieve: ["handle"],
-  })
-
-  if (!categories?.length) return null
+  // const { hits: categories } = await getCategories({
+  //   hitsPerPage: 4,
+  //   attributesToRetrieve: ["handle"],
+  // })
+const categories =[
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Primus Motor Oils"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Teres Motor Oils"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Fortis  Heavy-Duty Engine Oils"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Gravis Gear Oils"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Optimum Transmission Fluids"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Durus Off-Road Lubricants"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Frictio 4T Engine Oils"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Altum Hydraulic Oils"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Probus Industrial Oils"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Duo 2-Cycle Engine Oil"
+  },
+  {
+    image:{altText:'will be given',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSjpT0YPXyFzHpBKIPoedcq1J-G-9c25Jxw&s'},
+    title:"TXL Certus Gas Engine Oils"
+  },
+]
+  if (categories?.length===0) return null
 
   return (
     <div className="mt-20 bg-gray-50 px-4 py-20">

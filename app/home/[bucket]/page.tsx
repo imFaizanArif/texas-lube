@@ -25,7 +25,7 @@ export default async function Homepage(props: { params: Promise<{ bucket: string
     b: "Shop the best Deals on Top Brands & Unique Finds",
   }
 
-  const results = await getFeaturedProducts()
+  // const results = await getFeaturedProducts()
 
   return (
     <div className="flex w-full flex-col">
@@ -35,7 +35,8 @@ export default async function Homepage(props: { params: Promise<{ bucket: string
       <CategoriesSection /> */}
       {/* <HeroSlid */}
       <HeroSlider />
-      <AboutUs />
+      <CategoriesSection />
+      {/* <AboutUs /> */}
     </div>
   )
 }
