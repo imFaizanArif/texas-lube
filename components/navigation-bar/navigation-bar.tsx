@@ -3,7 +3,6 @@ import { ChevronIcon } from "components/icons/chevron-icon"
 import dynamic from "next/dynamic"
 
 import { cn } from "utils/cn"
-import { Autocomplete } from "./autocomplete"
 import { Cart } from "./cart"
 import { Favorites } from "./favorites"
 import { ImageGridItem, NavItem, TextGridItem, TextImageGridItem } from "./types"
@@ -40,12 +39,21 @@ function VariantGrid({ variant, items }: { variant?: "text-grid" | "image-grid" 
 }
 
 export function NavigationBar({ items }: NavigationBarProps) {
-  const itemsMarkup = items.map((singleMenuItem) => (
-    <li className={cn("menu__item", { menu__dropdown: !!singleMenuItem.submenu })} key={singleMenuItem.text}>
+  console.log('items', items);
+  const menuITems =[
+    {text: 'Home', href: '/'},
+    {text: 'Products', href: '/products'},
+    {text: 'Info', href: '/info'}
+  ]
+  const itemsMarkup = menuITems.map((singleMenuItem) => (
+    <li
+    //  className={cn("menu__item", { menu__dropdown: !!singleMenuItem.submenu })} 
+     className={cn("menu__item" )} 
+    key={singleMenuItem.text}>
       <NavigationItem singleMenuItem={singleMenuItem} />
 
       <div className="submenu megamenu__text w-full border-b border-black shadow-sm">
-        <VariantGrid items={singleMenuItem.submenu?.items} variant={singleMenuItem.submenu?.variant} />
+        {/* <VariantGrid items={singleMenuItem.submenu?.items} variant={singleMenuItem.submenu?.variant} /> */}
         <div className="submenu__inner flex w-full flex-col gap-4 md:hidden">
           <a href={singleMenuItem.href || "#"}>
             <h4 className="mb-20 text-center text-xl underline">See all {singleMenuItem.text}</h4>
@@ -68,18 +76,13 @@ export function NavigationBar({ items }: NavigationBarProps) {
             <span className="burger-line"></span>
             <span className="burger-line"></span>
           </button>
-          <Link prefetch={false} href="/" className="brand flex items-center text-xl font-bold">
-            Acme
-          </Link>
+        
           <div className="menu-actions absolute right-4 flex items-center justify-center gap-2">
-            <Favorites className="flex md:hidden" />
-            <Suspense fallback={<Skeleton className="size-8" />}>
-              <Cart className="flex md:hidden" />
-            </Suspense>
-            <SearchButton />
+          <Link prefetch={false} href="/" className="brand flex items-center text-xl font-bold">
+            Texas Lube
+          </Link>
           </div>
-          <ProductAddedAlert className="md:hidden" />
-        </section>
+         </section>
         <section className="navbar__center w-full md:justify-center">
           <span className="overlay"></span>
           <div className="menu w-full" id="menu">
