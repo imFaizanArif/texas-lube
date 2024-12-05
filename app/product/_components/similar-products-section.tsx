@@ -1,6 +1,8 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "components/ui/carousel"
 import { ProductCard } from "components/product-card"
 import { getSimilarProducts } from "lib/algolia"
+import { getProductWithId } from "utils/getProductAndSimilarProducts"
+import { ProductType } from "types"
 
 interface SimilarProductsSectionProps {
   slug: string
@@ -9,6 +11,8 @@ interface SimilarProductsSectionProps {
 
 export async function SimilarProductsSection({ slug, objectID }: SimilarProductsSectionProps) {
   const items = await getSimilarProducts(slug, objectID)
+  const { found, similarProducts } = getProductWithId({ id: slug })
+
 
   return (
     <section className="my-10">
@@ -17,9 +21,9 @@ export async function SimilarProductsSection({ slug, objectID }: SimilarProducts
         <h2 className="mb-10 text-[26px] font-medium tracking-[-0.78px]">You might also like</h2>
 
         <CarouselContent>
-          {items.map((product, idx) => (
-            <CarouselItem className="basis-1/2 md:basis-1/4" key={"featured_" + product.id + idx}>
-              <ProductCard prefetch {...product} />
+          {similarProducts.map((product:ProductType, idx) => (
+            <CarouselItem className="basis-1/2 md:basis-1/4" key={idx}>
+              <ProductCard   {...product} />
             </CarouselItem>
           ))}
         </CarouselContent>

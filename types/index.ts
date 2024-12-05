@@ -13,3 +13,12 @@ export type CommerceProduct = PlatformProduct & {
     lvl2?: string[]
   }
 }
+export type ProductType ={
+  name: string,
+  subTitle: string,
+  text: string
+  currency: string,
+  price: string | number ,
+  img: string,
+  id: number | string
+}

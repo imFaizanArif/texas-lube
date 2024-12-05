@@ -20,7 +20,8 @@ export default async function StaticPage(props: { params: Promise<{ slug: string
   )
 
   return (
-    <div className="relative mx-auto  py-6 md:py-5 xl:px-0">
+    <div className="relative mx-auto  py-12 md:py-24 xl:px-0">
+      {/* container size : max-w-container-md px-4 */}
       {
         slug === 'products' ? <ProductsComponent /> : slug === 'info' ? <InfoComponent /> : (
          <NotFound />

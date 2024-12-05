@@ -34,12 +34,7 @@ async function FavoritesView() {
 
   return (
     <>
-      {products.length === 0 ? <p className="text-lg tracking-tight">No favorite products. You can add them by clicking on a heart icon on product page</p> : null}
-      <div className="grid w-full grid-cols-[repeat(_auto-fill,minmax(140px,1fr)_)] items-start gap-4 gap-y-8 md:grid-cols-[repeat(_auto-fill,minmax(280px,1fr)_)]">
-        {products.map((singleResult, idx) => (
-          <ProductCard className="overflow-hidden rounded-lg" key={singleResult?.id} priority={[0, 1].includes(idx)} {...singleResult!} />
-        ))}
-      </div>
+       
     </>
   )
 }

@@ -12,24 +12,9 @@ interface CarouselSectionProps {
 
 export function CarouselSection({ items, title, className }: CarouselSectionProps) {
   return (
-    <Carousel opts={{ skipSnaps: true }}>
-      <div className={cn("mx-auto flex max-w-container-md flex-col gap-4", className)}>
-        <div className="flex justify-between sm:min-w-[280px]">
-          <h2 className="px-4 text-left text-4xl font-thin tracking-tighter">{title}</h2>
-          <div className="hidden gap-4 md:flex">
-            <CarouselPrevious className="relative" />
-            <CarouselNext className="relative" />
-          </div>
-        </div>
-        <CarouselContent>
-          {items.map((product, idx) => (
-            <CarouselItem key={"relevant_" + product.id + idx} className="basis-1/2 md:basis-1/4">
-              <ProductCard prefetch {...product} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </div>
-    </Carousel>
+  
+  <>
+  </>
   )
 }
 

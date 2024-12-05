@@ -2,7 +2,7 @@ type ProductTitleProps = {
   title: string
   className?: string
   currency?: string
-  price: string | null
+  price: string | number
 }
 
 export const ProductTitle = ({ title, currency, price, className }: ProductTitleProps) => {

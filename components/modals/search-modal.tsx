@@ -122,11 +122,11 @@ function Results({ results, query, status, closeModal }: ResultsProps) {
             </ul>
           </div>
           <div className="grid w-full grid-cols-[repeat(_auto-fill,minmax(115px,1fr)_)] items-start gap-4 gap-y-8 md:grid-cols-[repeat(_auto-fill,minmax(280px,1fr)_)]">
-            {results?.map(({ id, ...rest }) => (
+            {/* {results?.map(({ id, ...rest }) => (
               <div key={id} onClick={() => closeModal("search")}>
                 <ProductCard className="overflow-hidden rounded-lg" {...rest} />
               </div>
-            ))}
+            ))} */}
           </div>
         </>
       )

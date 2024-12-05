@@ -9,6 +9,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 1
             },
             {
@@ -17,6 +19,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 2
             },
             {
@@ -25,6 +29,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 3
             },
             {
@@ -33,6 +39,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 4
             },
             {
@@ -41,6 +49,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 5
             },
             {
@@ -49,6 +59,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 6
             },
             {
@@ -57,6 +69,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 7
             },
             {
@@ -65,6 +79,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 8
             },
             {
@@ -73,6 +89,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 9
             },
             {
@@ -81,6 +99,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 10
             },
             {
@@ -89,6 +109,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 11
             },
             {
@@ -97,6 +119,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 12
             },
             {
@@ -105,6 +129,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 13
             },
             {
@@ -113,6 +139,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 14
             }
         ]
@@ -127,6 +155,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 15
             },
             {
@@ -135,6 +165,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 16
             },
             {
@@ -143,6 +175,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 17
             },
             {
@@ -151,6 +185,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 18
             },
             {
@@ -159,6 +195,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 19
             },
             {
@@ -167,6 +205,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 20
             },
             {
@@ -175,6 +215,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 21
             },
             {
@@ -183,6 +225,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 22
             },
             {
@@ -191,6 +235,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 23
             },
             {
@@ -199,6 +245,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 24
             },
             {
@@ -207,6 +255,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 25
             },
             {
@@ -215,6 +265,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 26
             }
         ]
@@ -229,7 +281,9 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
-                id: 101 
+                currency: "$",
+                price: 50,
+                id: 101
             },
             {
                 "name": "TXL Fortis Elite SAE 10W-30 Full Synthetic Heavy-Duty Engine Oil",
@@ -237,6 +291,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 27
             },
             {
@@ -245,6 +301,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 28
             },
             {
@@ -253,6 +311,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 29
             },
             {
@@ -261,6 +321,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 30
             },
             {
@@ -269,6 +331,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 31
             },
             {
@@ -277,6 +341,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 32
             },
             {
@@ -285,6 +351,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 33
             },
             {
@@ -293,6 +361,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 34
             },
             {
@@ -301,6 +371,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 35
             },
             {
@@ -309,6 +381,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 36
             },
             {
@@ -317,6 +391,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 37
             },
             {
@@ -325,6 +401,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 38
             }
         ]
@@ -339,6 +417,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 39
             },
             {
@@ -347,6 +427,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 40
             },
             {
@@ -355,6 +437,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 41
             },
             {
@@ -363,6 +447,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 42
             },
             {
@@ -371,6 +457,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 43
             },
             {
@@ -379,6 +467,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 44
             },
             {
@@ -387,6 +477,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 45
             }
         ]
@@ -402,6 +494,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 46
             },
             {
@@ -410,6 +504,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 47
             },
             {
@@ -418,6 +514,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 48
             },
             {
@@ -426,6 +524,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 49
             },
             {
@@ -434,6 +534,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 50
             }
         ]
@@ -448,6 +550,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 51
             },
             {
@@ -456,6 +560,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 52
             },
             {
@@ -464,6 +570,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 53
             },
             {
@@ -472,6 +580,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 54
             },
             {
@@ -480,6 +590,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 55
             },
             {
@@ -488,6 +600,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 56
             },
             {
@@ -496,6 +610,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 57
             },
             {
@@ -504,6 +620,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 58
             }
         ]
@@ -520,6 +638,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 59
             },
             {
@@ -528,6 +648,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 60
             },
             {
@@ -536,6 +658,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 61
             },
             {
@@ -544,6 +668,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 62
             },
             {
@@ -552,6 +678,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 63
             },
             {
@@ -560,6 +688,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 64
             }
         ]
@@ -574,6 +704,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 65
             },
             {
@@ -582,6 +714,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 66
             },
             {
@@ -590,6 +724,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 67
             },
             {
@@ -598,6 +734,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 68
             },
             {
@@ -606,6 +744,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 69
             },
 
@@ -615,6 +755,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 70
             },
             {
@@ -623,6 +765,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 71
             },
             {
@@ -631,6 +775,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 72
             },
             {
@@ -639,6 +785,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 73
             }
         ]
@@ -653,6 +801,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 74
             },
             {
@@ -661,6 +811,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 75
             },
             {
@@ -669,6 +821,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 76
             },
             {
@@ -677,6 +831,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 77
             },
             {
@@ -685,6 +841,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 78
             },
             {
@@ -693,6 +851,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 79
             },
             {
@@ -701,6 +861,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 80
             },
             {
@@ -709,6 +871,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 81
             },
             {
@@ -717,6 +881,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 82
             },
             {
@@ -725,6 +891,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 83
             },
             {
@@ -733,6 +901,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 84
             },
             {
@@ -741,6 +911,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 85
             },
             {
@@ -749,6 +921,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 86
             },
             {
@@ -757,6 +931,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 87
             },
             {
@@ -765,6 +941,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 88
             },
             {
@@ -773,6 +951,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 89
             },
             {
@@ -781,6 +961,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 90
             },
             {
@@ -789,6 +971,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 91
             },
             {
@@ -797,6 +981,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 92
             },
             {
@@ -805,6 +991,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 93
             },
             {
@@ -813,6 +1001,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 94
             }
         ]
@@ -827,6 +1017,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 95
             },
             {
@@ -835,6 +1027,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 96
             }
         ]
@@ -849,6 +1043,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 97
             },
             {
@@ -857,6 +1053,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 98
             },
             {
@@ -865,6 +1063,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 99
             },
             {
@@ -873,6 +1073,8 @@ export const productsJSONData = [
                 "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
 `,
                 "img": "/product-img.png",
+                currency: "$",
+                price: 50,
                 id: 100
             }
         ]

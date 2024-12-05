@@ -24,6 +24,8 @@ import type { CommerceProduct } from "types"
 
 import { generateJsonLd } from "./metadata"
 import { getProduct, getProducts } from "lib/algolia"
+import { productsJSONData } from "constants/productsArray"
+import { getProductWithId } from "utils/getProductAndSimilarProducts"
 
 export const revalidate = 86400
 export const dynamic = "force-static"
@@ -43,77 +45,90 @@ export async function generateStaticParams() {
 
   return hits.map(({ handle }) => ({ slug: handle }))
 }
-
+const p = [
+  {
+    "id": 1,
+    "category": "TXL Primus Motor Oils",
+    "items": [
+      {
+        "name": "TXL Primus Elite SAE 0W-16 Full Synthetic Motor Oil",
+        "subTitle": "API SP, ILSAC GF-6B",
+        "text": ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta velit quis harum aut omnis a quasi odit ipsum aspernatur pariatur ab eligendi officia, fuga, vero deserunt cum qui iure ducimus!
+`,
+        currency: 'USD',
+        price: "",
+        "img": "/product-img.png",
+        id: 1
+      },
+    ]
+  }]
 export default async function Product(props: ProductProps) {
   const params = await props.params;
 
   const {
     slug
   } = params;
+  console.log('slug', slug);
+  // const getProductWithId = ({ id }) => {
+  //   let items = {}
+  //   let found = null
+  //   let similarProducts = []
+  //   productsJSONData.map((item, index) => {
+  //     items[index + 1] = item.items;
+  //   })
+  //   for (const key in items) {
+  //     if (items[key] && items[key].find(item => item.id == id)) {
+  //       found = items[key].find(item => item.id == id)
+  //       similarProducts = items[key]
+  //     }
+  //   }
+  //   return { found, similarProducts }
+  // }
+  const { found } = getProductWithId({ id: slug })
 
-  const product = await getProduct(removeOptionsFromUrl(slug))
 
-  const { color } = getOptionsFromUrl(slug)
-  const hasInvalidOptions = !hasValidOption(product?.variants, "color", color)
-
-  if (!product || hasInvalidOptions) {
-    return notFound()
-  }
-
-  const combination = getCombination(product, color)
-  const lastCollection = product?.collections?.findLast(Boolean)
-  const hasOnlyOneVariant = product.variants.length <= 1
-  const combinationPrice = combination?.price?.amount || null
-
-  return (
+  return !found ? <>No product Found with this {slug} id</> : (
+    // <>{slug}</>
     <div className="relative mx-auto max-w-container-md px-4 xl:px-0">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateJsonLd(product, slug)) }}></script>
+      {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateJsonLd(product, slug)) }}></script> */}
       <div className="mb:pb-8 relative flex w-full items-center justify-center gap-10 py-4 md:pt-12">
         <BackButton className="left-2 mb-8 hidden md:block xl:absolute" />
         <div className="mx-auto w-full max-w-container-sm">
-          <Breadcrumbs className="mb-8" items={makeBreadcrumbs(product)} />
+          {/* <Breadcrumbs className="mb-8" items={makeBreadcrumbs(product)} /> */}
         </div>
       </div>
       <main className="mx-auto max-w-container-sm">
         <div className="grid grid-cols-1 gap-4 md:mx-auto md:max-w-screen-xl md:grid-cols-12 md:gap-8">
           <ProductTitle
             className="md:hidden"
-            title={product.title}
-            price={combinationPrice}
-            currency={combination?.price ? mapCurrencyToSign(combination.price?.currencyCode as CurrencyType) : "$"}
+            title={found?.name}
+            price={found?.price}
+            currency={found?.currency}
           />
-          <ProductImages images={product.images} />
+          <ProductImages images={[found.img, found.img]} />
           <RightSection className="md:col-span-6 md:col-start-8 md:mt-0">
             <ProductTitle
               className="hidden md:col-span-4 md:col-start-9 md:block"
-              title={product.title}
-              price={combinationPrice}
-              currency={combination?.price ? mapCurrencyToSign(combination.price?.currencyCode as CurrencyType) : "$"}
+              title={found?.name}
+              price={found?.price}
+              currency={found?.currency}
             />
-            {!hasOnlyOneVariant && <VariantsSection variants={product.variants} handle={product.handle} combination={combination} />}
-            <p>{product.description}</p>
-            <AddToCartButton className="mt-4" product={product} combination={combination} />
-            <FavoriteMarker handle={product.handle} />
+            {/* {!hasOnlyOneVariant && <VariantsSection variants={product.variants} handle={product.handle} combination={combination} />} */}
+            <p>{found?.text}</p>
+            {/* <AddToCartButton className="mt-4" product={product} combination={combination} />
+            <FavoriteMarker handle={product.handle} /> */}
             <FaqSection />
           </RightSection>
         </div>
-        <Suspense>
-          <ReviewsSection avgRating={product.avgRating} productHandle={product.handle} productId={product.id} slug={slug} summary={product.reviewsSummary} />
-        </Suspense>
+        {/* <Suspense>
+          <ReviewsSection avgRating={5} productHandle={handleProduct} productId={slug} slug={slug} summary={"product.reviewsSummary"} />
+        </Suspense> */}
         <Suspense fallback={<SimilarProductsSectionSkeleton />}>
-          <SimilarProductsSection objectID={product.objectID} slug={slug} />
+          <SimilarProductsSection objectID={slug} slug={slug} />
         </Suspense>
       </main>
     </div>
   )
 }
 
-function makeBreadcrumbs(product: CommerceProduct) {
-  const lastCollection = product.collections?.findLast(Boolean)
 
-  return {
-    Home: "/",
-    [lastCollection?.handle ? slugToName(lastCollection?.handle) : "Products"]: lastCollection?.handle ? `/category/${lastCollection.handle}` : "/search",
-    [product.title]: "",
-  }
-}
