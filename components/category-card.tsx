@@ -9,9 +9,8 @@ interface CategoryCardProps extends Pick<PlatformCollection, "title" | "image"> 
 }
 
 export const CategoryCard = ({ image, title, index, className }: CategoryCardProps) => {
-  // const href = `/category/${handle}`
-  return (
-    // <Link href={href} className={cn("group relative overflow-hidden rounded-lg transition-all hover:shadow-md", className)} prefetch={false}>
+   return (
+    <Link href={'/products'}  >
     <div 
     className="flex flex-col items-center justify-center bg-gray-100 p-4 rounded-lg min-w-[200px] shadow-md"
     >
@@ -27,6 +26,6 @@ export const CategoryCard = ({ image, title, index, className }: CategoryCardPro
         <h3 className="mt-4 text-center text-sm font-bold">{title}</h3>
       
     </div>
-    // </Link>
+    </Link>
   )
 }
