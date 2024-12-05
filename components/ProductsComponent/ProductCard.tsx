@@ -10,8 +10,8 @@ export default function ProductCard(props: ProductCardProps) {
     } = props
 
     return (
-        <Link href={`/product/${id}`} className="relative mr-8 sm:ml-[10%] ">
-            <div className="relative right-[20%] bottom-[-30%]">
+        <Link href={`/product/${id}`} className=" mb-3 mr-3">
+            {/* <div className="relative right-[20%] bottom-[-30%]">
                 <Image
                     src={img}
                     alt="Product Image"
@@ -19,19 +19,31 @@ export default function ProductCard(props: ProductCardProps) {
                     height={220}
                     className="object-contain transform scale-x-[-1]	"
                 />
-            </div>
+            </div> */}
 
             <div className="bg-white rounded-md flex items-start border border-slate-400 shadow-md 	">
 
                 <div className="  ">
-                    <div className="bg-[#BF2B29] p-3 pl-[25%] rounded-md">
+                    <div className="bg-[#BF2B29] p-3   rounded-md">
 
                         <h2 className="text-white font-bold text-lg">
                             {name}
                         </h2>
-                        <p className="text-white font-medium text-sm">{subTitle}</p>
+                        
+                            <p className="text-white font-medium text-sm">{subTitle}</p>
                     </div>
-                    <div className="p-3 pl-[25%]">
+                    {/* <div className="p-3  "> */}
+                    <div className="grid sm:grid-cols-2 p-3">
+                            <div className="mx-auto">
+                                <Image
+                                    src={img}
+                                    alt="Product Image"
+                                    width={220}
+                                    height={220}
+                                    className="object-contain transform scale-x-[-1]	"
+                                />
+                            </div>
+                            <div>
 
                         <p className="text-gray-800 text-md mt-2">
                             {text}
@@ -51,6 +63,7 @@ export default function ProductCard(props: ProductCardProps) {
                             </span>
                             SEE PRODUCT DETAILS
                         </button>
+                            </div>
                     </div>
                 </div>
             </div>

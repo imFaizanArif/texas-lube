@@ -1,36 +1,35 @@
-import { format } from "date-fns/format"
-import { getAllPages, getPage } from "lib/shopify"
+import InfoComponent from "components/InfoComponent";
+import ProductsComponent from "components/ProductsComponent";
 
-export const revalidate = 86400
-export const dynamic = "force-static"
-export const dynamicParams = true
 
-export { generateMetadata } from "./metadata"
+
+
 
 export default async function StaticPage(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params
 
   const { slug } = params
-
-  const page = await getPage(slug)
-
-  if (!page) return null
+  console.log('slug', slug);
+  const NotFound = () => (
+    <div className="flex min-h-screen flex-col items-center justify-center bg-neutral-100 dark:bg-neutral-900">
+      <h1 className="text-6xl font-bold text-neutral-800 dark:text-neutral-200">404</h1>
+      <p className="mt-4 text-2xl text-neutral-600 dark:text-neutral-500">Page not found</p>
+      <p className="mt-2 text-lg text-neutral-500 dark:text-neutral-300">Sorry, we couldn't find the page you're looking for.</p>
+      <a className="mt-8 rounded-md bg-neutral-200 px-6 py-2 text-neutral-900 hover:bg-neutral-300 hover:text-neutral-900 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-600 dark:hover:text-neutral-200"
+        href="/">Go to Homepage</a></div>
+  )
 
   return (
-    <div className="relative mx-auto max-w-container-md px-4 py-12 md:py-24 xl:px-0">
-      <main className="mx-auto max-w-container-sm">
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">{page.title}</h1>
-        <div className="mt-8 text-xl" dangerouslySetInnerHTML={{ __html: page.body }} />
-        <p className="mt-8 md:mt-12">This document was last updated: {format(page.updatedAt, "MMMM do, yyyy")}</p>
-      </main>
+    <div className="relative mx-auto  py-6 md:py-5 xl:px-0">
+      {
+        slug === 'products' ? <ProductsComponent /> : slug === 'info' ? <InfoComponent /> : (
+         <NotFound />
+        )
+      }
+
     </div>
   )
 }
 
-export async function generateStaticParams() {
-  const pages = (await getAllPages()) || []
 
-  return pages.map((page) => ({
-    slug: page.handle,
-  }))
-}
+
