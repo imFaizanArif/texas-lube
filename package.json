@@ -63,6 +63,7 @@
     "leaflet": "^1.9.4",
     "next": "15.0.3",
     "next-compose-plugins": "^2.2.1",
+    "nodemailer": "^6.9.16",
     "nuqs": "^1.17.1",
     "p-retry": "^6.2.0",
     "playwright": "^1.42.1",
