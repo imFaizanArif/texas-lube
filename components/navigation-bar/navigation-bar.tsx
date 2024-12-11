@@ -43,6 +43,8 @@ export function NavigationBar({ items }: NavigationBarProps) {
   const menuITems =[
     {text: 'Home', href: '/'},
     {text: 'Products', href: '/products'},
+    {text: 'Our Mission', href: '/our-mission'},
+    {text: 'About Us', href: '/about-us'},
     {text: 'Info', href: '/info'}
   ]
   const itemsMarkup = menuITems.map((singleMenuItem) => (
@@ -102,9 +104,11 @@ export function NavigationBar({ items }: NavigationBarProps) {
                 </button>
                 {/* <Autocomplete className="mr-6" /> */}
                 <div className="flex gap-2">
+                <Link href={"/contact-us"}>
                   <Button size="lg" role="link" className="transition-transform">
                     Contact Us
                   </Button>
+                  </Link>
                   {/* <Favorites className="hidden md:flex" /> */}
                   {/* <Cart className="hidden md:flex" /> */}
                   {/* <ProductAddedAlert className="hidden md:block" /> */}
