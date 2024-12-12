@@ -8,11 +8,11 @@ interface CategoryCardProps extends Pick<PlatformCollection, "title" | "image"> 
   className?: string
 }
 
-export const CategoryCard = ({ image, title, index, className }: CategoryCardProps) => {
+export const CategoryCard = ({ image, title, index,   }: CategoryCardProps) => {
    return (
     <Link href={'/products'}  >
     <div 
-    className="flex flex-col items-center justify-center bg-gray-100 p-4 rounded-lg min-w-[200px] shadow-md"
+    className="flex flex-col items-center justify-center bg-gray-100 p-4 rounded-lg min-w-[200px] shadow-md border"
     >
         <Image
           src={image?.url || `/category-placeholder-${index}.png`}
@@ -23,7 +23,7 @@ export const CategoryCard = ({ image, title, index, className }: CategoryCardPro
         />
         
       
-        <h3 className="mt-4 text-center text-sm font-bold">{title}</h3>
+        <h3 className="mt-4 text-center text-sm font-bold line-clamp-1  ">{title}</h3>
       
     </div>
     </Link>

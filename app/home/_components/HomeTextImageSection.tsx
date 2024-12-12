@@ -6,7 +6,7 @@ export function HomeTextImageSection() {
     <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-8 p-6 md:flex-row">
       {/* Left Section */}
       <div className="flex flex-col items-start space-y-4 text-left md:w-1/2">
-        <h2 className="text-2xl font-bold leading-tight md:text-4xl">Our Products & Global Reach</h2>
+        <h2 className="mb-5 text-center   font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Our Products & Global Reach</h2>
         <p className="text-base text-gray-600 md:text-lg">
           {" "}
           We offer a comprehensive range of high-quality lubricants, greases, and automotive fluids, including Full Synthetic Motor Oil, Gear Oil, Hydraulic Fluids, and more. All

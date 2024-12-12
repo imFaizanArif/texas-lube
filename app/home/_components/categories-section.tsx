@@ -58,18 +58,13 @@ const categories =[
   return (
     <div className="mt-20 bg-gray-50 px-4 py-10">
       <div className="m-auto  max-w-container-md px-6 py-12">
-        <h2 className="mb-8 text-center text-4xl font-semibold"> Categories</h2>
-        <div className="flex gap-4 overflow-x-auto scrollbar-hide">
+        <h2 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center"> Categories</h2>
+        <div className="flex gap-4 overflow-x-auto scrollbar-hide py-2">
         {categories.map((category, index) => {
             return (
               <CategoryCard
                 key={index}
-                className={cn("bg-white shadow-md md:shadow-none", {
-                  "md:border-r": index === 0 || index === 2,
-                  "md:border-l": index === 1 || index === 3,
-                  "md:border-b": index === 0 || index === 1,
-                  "md:border-t": index === 2 || index === 3,
-                })}
+                 
                 index={index + 3}
                 {...category}
               />

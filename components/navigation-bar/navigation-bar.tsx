@@ -22,22 +22,7 @@ const ProductAddedAlert = dynamic(() => import("app/product/_components/product-
 interface NavigationBarProps {
   items: NavItem[]
 }
-
-function VariantGrid({ variant, items }: { variant?: "text-grid" | "image-grid" | "text-image-grid"; items?: TextGridItem[] | ImageGridItem[] | TextImageGridItem[] }) {
-  if (!items) return null
-
-  switch (variant) {
-    case "text-grid":
-      return <TextGridVariant items={items as TextGridItem[]} />
-    case "image-grid":
-      return <ImageGridVariant items={items as ImageGridItem[]} />
-    case "text-image-grid":
-      return <TextImageGridVariant items={items as TextImageGridItem[]} />
-    default:
-      return null
-  }
-}
-
+ 
 export function NavigationBar({ items }: NavigationBarProps) {
   console.log('items', items);
   const menuITems =[
@@ -52,14 +37,14 @@ export function NavigationBar({ items }: NavigationBarProps) {
   const itemsMarkup = menuITems.map((singleMenuItem) => (
     <li
     //  className={cn("menu__item", { menu__dropdown: !!singleMenuItem.submenu })} 
-     className={cn("menu__item" )} 
+     className={`${cn("menu__item" )} `} 
     key={singleMenuItem.text}>
       <NavigationItem singleMenuItem={singleMenuItem} />
 
       <div className="submenu megamenu__text w-full border-b border-black shadow-sm">
         {/* <VariantGrid items={singleMenuItem.submenu?.items} variant={singleMenuItem.submenu?.variant} /> */}
-        <div className="submenu__inner flex w-full flex-col gap-4 md:hidden">
-          <a href={singleMenuItem.href || "#"}>
+        <div className="submenu__inner flex w-full !flex-col gap-4 md:hidden">
+          <a className="" href={singleMenuItem.href || "#"}>
             <h4 className="mb-20 text-center text-xl underline">See all {singleMenuItem.text}</h4>
           </a>
         </div>
@@ -68,7 +53,7 @@ export function NavigationBar({ items }: NavigationBarProps) {
   ))
 
   return (
-    <header className="mega-navbar sticky top-0 z-50 mx-auto my-0 flex w-full flex-wrap content-center items-center justify-between border-b border-black bg-white py-6">
+    <header className="mega-navbar sticky top-0 z-50 mx-auto my-0 flex w-full flex-wrap content-center px-3 items-center justify-between border-b border-black bg-white py-6">
       <div className="flex justify-start px-4 md:mx-auto md:w-full md:max-w-container-md md:px-0">
         <Link prefetch={false} href="/" className="brand mr-20 hidden items-center text-xl font-bold md:flex">
           <Image src={'/logo.webp'} alt="logo" width={260} height={40} />
@@ -83,7 +68,9 @@ export function NavigationBar({ items }: NavigationBarProps) {
         
           <div className="menu-actions absolute right-4 flex items-center justify-center gap-2">
           <Link prefetch={false} href="/" className="brand flex items-center text-xl font-bold">
-            Texas Lube
+            {/* Texas Lube */}
+          <Image src={'/logo.webp'} alt="logo" width={100} height={70} />
+
           </Link>
           </div>
          </section>
@@ -99,21 +86,26 @@ export function NavigationBar({ items }: NavigationBarProps) {
               <span className="menu__title"></span>
             </div>
             <div className="menu__inner flex w-full justify-between">
-              <ul className="mt-10 flex w-full flex-col gap-8 px-4 md:mt-0 md:w-auto md:flex-row md:items-center md:justify-start xl:px-0">{itemsMarkup}</ul>
+              <ul className="mt-10 flex w-full flex-col gap-4 lg:gap-8 px-4 md:mt-0 md:w-auto md:flex-row md:items-center md:justify-start xl:px-0">{itemsMarkup}
+              <Link className="flex md:hidden" href={"/contact-us"}>
+                  <Button size="lg" role="link" className="transition-transform">
+                    Contact Us
+                  </Button>
+                  </Link>
+              </ul>
+               
               <div className="relative ml-auto flex items-center">
                 <button className="menu-close-button absolute right-3 top-0 bg-transparent md:hidden" aria-label="close menu" aria-controls="menu">
                   <CloseIcon className="size-5" />
                 </button>
                 {/* <Autocomplete className="mr-6" /> */}
-                <div className="flex gap-2">
+                <div className="hidden md:flex gap-2  ">
                 <Link href={"/contact-us"}>
                   <Button size="lg" role="link" className="transition-transform">
                     Contact Us
                   </Button>
                   </Link>
-                  {/* <Favorites className="hidden md:flex" /> */}
-                  {/* <Cart className="hidden md:flex" /> */}
-                  {/* <ProductAddedAlert className="hidden md:block" /> */}
+                  
                 </div>
               </div>
             </div>

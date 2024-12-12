@@ -12,7 +12,7 @@ export function NavigationItem({ singleMenuItem }: { singleMenuItem: NavItem }) 
   }
 
   return (
-    <a onClick={handleClick} href={singleMenuItem.href || "#"} className="menu__link text-[22px] hover:underline md:text-sm/[18px]">
+    <a onClick={handleClick} href={singleMenuItem.href || "#"} className=" !text-[10px] md:!text-[16px] hover:underline ">
       {singleMenuItem.text}
       {!!singleMenuItem.submenu && (
         <i>

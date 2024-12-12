@@ -51,23 +51,15 @@ export default function ForDistributors() {
       <div className="relative   z-10 mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:px-16">
         <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-left">Become a Distributor</h1>
 
-        <p className="!mb-[100px] mt-4 w-[70%] text-center text-[grey] lg:text-left">
+        <p className="lg:mb-[100px] mb-[50px] mt-4 w-full lg:w-[70%] text-center text-[grey] lg:text-left">
           Partner with us to distribute high-quality lubricants and automotive fluids globally. Join our trusted network and benefit from exceptional support, competitive prices,
           and a proven track record of success. 
         </p>
 
-        <div className="mt-8 grid w-[70%] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid  w-full lg:w-[70%] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {distributorsCardsData.map((data, index) => (
-            <div key={index} className="flex items-start space-x-4">
-              {/* <div className="h-[50px] w-[60px] bg-cover bg-center text-red-500">
-                <Image
-                  src={data.img} // Replace with the correct image source
-                  alt="Truck Background"
-                  width={60}
-                  height={50}
-                  className="object-cover"
-                />
-              </div> */}
+            <div key={index} className="flex items-center md:items-start">
+              
 
               <div>
                 <h3 className="font-bold">{data.title}</h3>
@@ -77,7 +69,7 @@ export default function ForDistributors() {
           ))}
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 flex justify-center lg:justify-start">
           <Link href={'/contact-us'} className="rounded-lg bg-[#BF2B29] px-8 py-5 font-semibold text-white shadow-lg hover:bg-red-600">Become a Distributor</Link>
         </div>
       </div>
