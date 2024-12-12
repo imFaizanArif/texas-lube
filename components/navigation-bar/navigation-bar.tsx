@@ -43,9 +43,11 @@ export function NavigationBar({ items }: NavigationBarProps) {
   const menuITems =[
     {text: 'Home', href: '/'},
     {text: 'Products', href: '/products'},
+    {text: 'Info', href: '/info'},
     {text: 'Our Mission', href: '/our-mission'},
     {text: 'About Us', href: '/about-us'},
-    {text: 'Info', href: '/info'}
+    {text: 'Our Distributors', href: '/our-distributors'},
+
   ]
   const itemsMarkup = menuITems.map((singleMenuItem) => (
     <li

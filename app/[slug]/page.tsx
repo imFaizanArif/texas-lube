@@ -1,5 +1,6 @@
 import AboutUs from "components/AboutUs";
 import ContactUs from "components/ContactUs";
+import DistributorPage from "components/DistributorPage";
 import InfoComponent from "components/InfoComponent";
 import MissionVision from "components/MissionPage";
 import ProductsComponent from "components/ProductsComponent";
@@ -31,6 +32,7 @@ export default async function StaticPage(props: { params: Promise<{ slug: string
          : slug.trim() === 'contact-us' ? <ContactUs /> 
          : slug.trim() === 'our-mission' ? <MissionVision /> 
          : slug.trim() === 'about-us' ? <AboutUs /> 
+         : slug.trim() === 'our-distributors' ? <DistributorPage /> 
          : <NotFound />
       }
 
