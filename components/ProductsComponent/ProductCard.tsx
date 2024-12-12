@@ -6,11 +6,15 @@ interface ProductCardProps {
 
 export default function ProductCard(props: ProductCardProps) {
     const {
-        name, subTitle, text, img, id
+        name, subTitle, text, img, id, category
     } = props
-
+    function convertSpacesToHyphens(str) {
+        return str.replace(/ /g, "-");
+    }
+const convertedCategoryString =convertSpacesToHyphens(category)
+const convertedNameString =convertSpacesToHyphens(name)
     return (
-        <Link href={`/product/${id}`} className=" mb-3 mr-3">
+        <Link href={`/${convertedCategoryString}/${convertedNameString}/${id}`} className=" mb-3 mr-3">
             {/* <div className="relative right-[20%] bottom-[-30%]">
                 <Image
                     src={img}
