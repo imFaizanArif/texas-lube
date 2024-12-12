@@ -56,7 +56,7 @@ const categories =[
   if (categories?.length===0) return null
 
   return (
-    <div className="mt-20 bg-gray-50 px-4 py-10">
+    <div className="mt-5 bg-gray-50 px-4 py-10">
       <div className="m-auto  max-w-container-md px-6 py-12">
         <h2 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center"> Categories</h2>
         <div className="flex gap-4 overflow-x-auto scrollbar-hide py-2">

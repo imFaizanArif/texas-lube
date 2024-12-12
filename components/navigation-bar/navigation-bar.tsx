@@ -39,7 +39,24 @@ export function NavigationBar({ items }: NavigationBarProps) {
     //  className={cn("menu__item", { menu__dropdown: !!singleMenuItem.submenu })} 
      className={`${cn("menu__item" )} `} 
     key={singleMenuItem.text}>
-      <NavigationItem singleMenuItem={singleMenuItem} />
+      <NavigationItem showMobile={false} singleMenuItem={singleMenuItem} />
+
+      <div className="submenu megamenu__text w-full border-b border-black shadow-sm">
+        {/* <VariantGrid items={singleMenuItem.submenu?.items} variant={singleMenuItem.submenu?.variant} /> */}
+        <div className="submenu__inner flex w-full !flex-col gap-4 md:hidden">
+          <a className="" href={singleMenuItem.href || "#"}>
+            <h4 className="mb-20 text-center text-xl underline">See all {singleMenuItem.text}</h4>
+          </a>
+        </div>
+      </div>
+    </li>
+  ))
+  const itemsMarkupMobile = menuITems.map((singleMenuItem) => (
+    <li
+    //  className={cn("menu__item", { menu__dropdown: !!singleMenuItem.submenu })} 
+     className={`${cn("menu__item" )} `} 
+    key={singleMenuItem.text}>
+      <NavigationItem showMobile={true} singleMenuItem={singleMenuItem} />
 
       <div className="submenu megamenu__text w-full border-b border-black shadow-sm">
         {/* <VariantGrid items={singleMenuItem.submenu?.items} variant={singleMenuItem.submenu?.variant} /> */}
@@ -76,7 +93,7 @@ export function NavigationBar({ items }: NavigationBarProps) {
          </section>
         <section className="navbar__center w-full md:justify-center">
           <span className="overlay"></span>
-          <div className="menu w-full" id="menu">
+          <div className="menu w-[50%]" id="menu">
             <div className="menu__header">
               <span className="menu__arrow">
                 <i className="rotate-90">
@@ -86,7 +103,11 @@ export function NavigationBar({ items }: NavigationBarProps) {
               <span className="menu__title"></span>
             </div>
             <div className="menu__inner flex w-full justify-between">
-              <ul className="mt-10 flex w-full flex-col gap-4 lg:gap-8 px-4 md:mt-0 md:w-auto md:flex-row md:items-center md:justify-start xl:px-0">{itemsMarkup}
+              <ul className="mt-10  w-full  gap-4 lg:gap-8 px-4 md:mt-0 md:w-auto hidden md:flex md:items-center md:justify-start xl:px-0">{itemsMarkup}
+              
+              </ul>
+              {/* mobile */}
+              <ul className="mt-10 flex w-full flex-col gap-4 lg:gap-8   md:mt-0 md:w-auto md:hidden flex flex-col md:items-center md:justify-start  ">{itemsMarkupMobile}
               <Link className="flex md:hidden" href={"/contact-us"}>
                   <Button size="lg" role="link" className="transition-transform">
                     Contact Us
