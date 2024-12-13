@@ -71,7 +71,7 @@ export function NavigationBar({ items }: NavigationBarProps) {
 
   return (
     <header className="mega-navbar sticky top-0 z-50 mx-auto my-0 flex w-full flex-wrap content-center px-3 items-center justify-between border-b border-black bg-white py-6">
-      <div className="flex justify-start px-4 md:mx-auto md:w-full md:max-w-container-md md:px-0">
+      <div className="flex justify-between px-4 md:mx-auto md:w-full md:max-w-container-md md:px-0">
         <Link prefetch={false} href="/" className="brand mr-20 hidden items-center text-xl font-bold md:flex">
           <Image src={'/logo.webp'} alt="logo" width={260} height={40} />
         </Link>
@@ -91,9 +91,9 @@ export function NavigationBar({ items }: NavigationBarProps) {
           </Link>
           </div>
          </section>
-        <section className="navbar__center w-full md:justify-center">
-          <span className="overlay"></span>
-          <div className="menu w-[50%]" id="menu">
+        <section className="navbar__center w-full md:justify-between">
+          {/* <span className="overlay"></span> */}
+          <div className="menu bg-[#000000cc] md:bg-white w-full" id="menu">
             <div className="menu__header">
               <span className="menu__arrow">
                 <i className="rotate-90">
@@ -102,21 +102,21 @@ export function NavigationBar({ items }: NavigationBarProps) {
               </span>
               <span className="menu__title"></span>
             </div>
-            <div className="menu__inner flex w-full justify-between">
-              <ul className="mt-10  w-full  gap-4 lg:gap-8 px-4 md:mt-0 md:w-auto hidden md:flex md:items-center md:justify-start xl:px-0">{itemsMarkup}
+            <div className="menu__inner flex w-full !justify-between">
+              <ul className="mt-10  w-full  gap-4 lg:gap-8 px-4 md:mt-0 md:w-auto hidden md:flex md:items-center md:justify-between xl:px-0">{itemsMarkup}
               
               </ul>
               {/* mobile */}
               <ul className="mt-10 flex w-full flex-col gap-4 lg:gap-8   md:mt-0 md:w-auto md:hidden flex flex-col md:items-center md:justify-start  ">{itemsMarkupMobile}
-              <Link className="flex md:hidden" href={"/contact-us"}>
-                  <Button size="lg" role="link" className="transition-transform">
+              <Link className="flex md:hidden px-[15px]" href={"/contact-us"}>
+                  <Button size="lg" role="link" className="transition-transform bg-blue-500 text-[18px]">
                     Contact Us
                   </Button>
                   </Link>
               </ul>
                
               <div className="relative ml-auto flex items-center">
-                <button className="menu-close-button absolute right-3 top-0 bg-transparent md:hidden" aria-label="close menu" aria-controls="menu">
+                <button className="menu-close-button absolute right-3 top-0 bg-transparent md:hidden bg-white rounded-full p-1" aria-label="close menu" aria-controls="menu">
                   <CloseIcon className="size-5" />
                 </button>
                 {/* <Autocomplete className="mr-6" /> */}
