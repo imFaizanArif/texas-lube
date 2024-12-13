@@ -28,7 +28,6 @@ export function NavigationBar({ items }: NavigationBarProps) {
   const menuITems =[
     {text: 'Home', href: '/'},
     {text: 'Products', href: '/products'},
-    {text: 'Info', href: '/info'},
     {text: 'Our Mission', href: '/our-mission'},
     {text: 'About Us', href: '/about-us'},
     {text: 'Our Distributors', href: '/our-distributors'},
@@ -83,7 +82,7 @@ export function NavigationBar({ items }: NavigationBarProps) {
             <span className="burger-line"></span>
           </button>
         
-          <div className="menu-actions absolute right-4 flex items-center justify-center gap-2">
+          <div className="menu-actions absolute right-4 flex items-center justify-center gap-2 h-[20px]">
           <Link prefetch={false} href="/" className="brand flex items-center text-xl font-bold">
             {/* Texas Lube */}
           <Image src={'/logo.webp'} alt="logo" width={100} height={70} />
@@ -108,8 +107,8 @@ export function NavigationBar({ items }: NavigationBarProps) {
               </ul>
               {/* mobile */}
               <ul className="mt-10 flex w-full flex-col gap-4 lg:gap-8   md:mt-0 md:w-auto md:hidden flex flex-col md:items-center md:justify-start  ">{itemsMarkupMobile}
-              <Link className="flex md:hidden px-[15px]" href={"/contact-us"}>
-                  <Button size="lg" role="link" className="transition-transform bg-blue-500 text-[18px]">
+              <Link className="flex md:hidden px-[10%]" href={"/contact-us"}>
+                  <Button size="lg" role="link" className="transition-transform bg-transparent border border-white hover:bg-blue-600 text-[18px]">
                     Contact Us
                   </Button>
                   </Link>

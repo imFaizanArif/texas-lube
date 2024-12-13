@@ -1,11 +1,12 @@
 interface BannerProps {
   title: string
   subtitle: string
-  description: string
+  description: string,
+  img:string
 }
-const BannerComponent = ({ title, subtitle, description }) => {
+const BannerComponent = ({ title, subtitle, description,img }) => {
   return (
-    <div className="relative h-[300px] w-full bg-cover bg-center text-white mb-5 !rounded-md shadow-md" style={{ backgroundImage: "url(/logo.webp)" ,backgroundPosition:"center",
+    <div className="relative h-[300px] w-full bg-cover bg-center text-white mb-5 !rounded-md shadow-md" style={{ backgroundImage: `url(${img})` ,backgroundPosition:"center",
         backgroundRepeat:'no-repeat',backgroundSize:"cover"
     }}>
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 px-6 text-center">

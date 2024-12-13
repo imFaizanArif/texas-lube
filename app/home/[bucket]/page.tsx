@@ -6,6 +6,7 @@ import HeroSlider from "components/carousel"
  
 import { HomeTextImageSection } from "../_components/HomeTextImageSection"
 import WhoWeAre from "components/WhoWeAre"
+import InfoComponent from "components/InfoComponent"
 
 export const revalidate = 86400
 
@@ -22,6 +23,8 @@ export default async function Homepage(props: { params: Promise<{ bucket: string
       <CategoriesSection />
       <WhoWeAre />
       <HomeTextImageSection />
+      <InfoComponent />
+
     </div>
   )
 }

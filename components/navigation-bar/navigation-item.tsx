@@ -12,7 +12,7 @@ export function NavigationItem({ singleMenuItem,showMobile }: { singleMenuItem: 
   }
 
   return (
-    <div className={`${showMobile?'px-4 py-2 hover:!bg-[#BF2B29] hover:!text-white ':''}`}>
+    <div className={`${showMobile?'px-[10%] py-2 hover:!bg-[#BF2B29] hover:!text-white ':''}`}>
 
     <a onClick={handleClick} href={singleMenuItem.href || "#"} className={`${showMobile ? 'hover:text-white text-white md:text-white ':''} !text-[18px]  md:!text-[16px] hover:underline `}>
       {singleMenuItem.text}

@@ -1,15 +1,10 @@
-import BannerComponent from "components/BannerComponent"
 import React from "react"
 import ContactForm from "./ContactForm"
 
 const ContactUs = () => {
   return (
     <div className="mx-auto max-w-7xl px-6 py-12">
-      <BannerComponent
-        title="Contact Us"
-        subtitle="We’re Here to Assist You"
-        description="Reach out to us with your questions, support requests, or partnership inquiries. We're happy to help!"
-      />
+     
       <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Contact Us</h1>
       <div className="mb-8">
         <p className="text-lg">

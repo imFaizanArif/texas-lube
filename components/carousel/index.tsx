@@ -6,12 +6,24 @@ const OPTIONS = { loop: true }
 const data = [
      
     {
-        img: '/4.svg',
+        img: '/hero1.jpg',
         title: 'We are best Engine Oil Company1',
     },
     {
-        img: '/5.svg',
-        title: 'We are best Engine Oil Company2',
+        img: '/hero2.jpg',
+        title: 'We are best Engine Oil Company1',
+    },
+    {
+        img: '/hero3.jpg',
+        title: 'We are best Engine Oil Company1',
+    },
+    {
+        img: '/hero4.jpg',
+        title: 'We are best Engine Oil Company1',
+    },
+    {
+        img: '/hero5.jpg',
+        title: 'We are best Engine Oil Company1',
     },
 ]
 const HeroSlider = () => (

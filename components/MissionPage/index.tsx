@@ -4,13 +4,12 @@ import React from "react"
 const MissionVision = () => {
   return (
     <div className="mx-auto max-w-7xl px-6 py-12">
-      <BannerComponent
-        title="Our Mission and Vision"
-        subtitle="Driving Excellence and Sustainability"
-        description="Discover our commitment to quality, innovation, and a sustainable future in the global lubricants industry."
-      />
-      <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Mission and Vision</h1>
+       <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Mission and Vision</h1>
 
+      <div className="mb-12">
+        <h2 className="mb-4 text-2xl font-semibold text-[#2E439A]">Driving Excellence and Sustainability</h2>
+        <p className="text-lg">Discover our commitment to quality, innovation, and a sustainable future in the global lubricants industry.</p>
+      </div>
       <div className="mb-12">
         <h2 className="mb-4 text-2xl font-semibold text-[#2E439A]">Our Mission</h2>
         <p className="text-lg">

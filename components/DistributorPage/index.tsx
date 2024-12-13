@@ -23,12 +23,11 @@ const DistributorPage = () => {
 
   return (
     <div className="mx-auto max-w-7xl px-6 py-12">
-      <BannerComponent
-        title="Our Distributor"
-        subtitle="Global Network of Trusted Distributors"
-        description="Discover how our trusted partners deliver high-quality lubricants across the globe."
-      />
       <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Our Global Network of Distributors</h1>
+      <div className="mb-5">
+        <h2 className="mb-4 text-2xl font-semibold text-[#2E439A] mt-12">Global Network of Trusted Distributors</h2>
+        <p className="text-lg">Discover how our trusted partners deliver high-quality lubricants across the globe. </p>
+      </div>
       <p className="mb-8 text-lg">
         At TEXAS LUBE LLC, we are proud to work with a wide network of trusted distributors around the world. Our partners play a key role in delivering our high-quality
         lubricants, greases, and automotive fluids to businesses and consumers in various regions. With a global presence spanning across the Americas, the Middle East, Africa, and

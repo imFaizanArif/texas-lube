@@ -4,12 +4,14 @@ import React from "react"
 const AboutUs = () => {
   return (
     <div className="mx-auto max-w-7xl px-6 py-12">
-      <BannerComponent
-        title="Synthex PRIMUS"
-        subtitle="Premium Engine Oils"
-        description="Engineered to meet the stringent performance demands of vehicles requiring API SP performance, PRIMUS products offer unparalleled lubrication. Our oils surpass industry standards, boasting certifications such as API-SP, API-SN, ILSAC GF-6A, and ILSAC GF-6B, ensuring optimal protection and performance for your engine."
-      />
       <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">About Us</h1>
+      <div className="mb-5">
+        <h2 className="mb-4 text-2xl font-semibold text-[#2E439A]">Premium Engine Oils</h2>
+        <p className="text-lg">
+          Engineered to meet the stringent performance demands of vehicles requiring API SP performance, PRIMUS products offer unparalleled lubrication. Our oils surpass industry
+          standards, boasting certifications such as API-SP, API-SN, ILSAC GF-6A, and ILSAC GF-6B, ensuring optimal protection and performance for your engine.
+        </p>
+      </div>
       <div className="mb-8">
         <p className="text-lg">
           Our headquarters is located at <strong>7250 Harwin Dr, Ste N, Houston, Texas, USA</strong>, strategically positioned in the heart of the petroleum industry. With over 94
