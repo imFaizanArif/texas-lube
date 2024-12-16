@@ -25,7 +25,7 @@ const DistributorPage = () => {
     <div className="mx-auto max-w-7xl px-6 py-12">
       <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Our Global Network of Distributors</h1>
       <div className="mb-5">
-        <h2 className="mb-4 text-2xl font-semibold text-[#2E439A] mt-12">Global Network of Trusted Distributors</h2>
+        <h2 className="mb-4 mt-12 text-2xl font-semibold text-[#2E439A]">Global Network of Trusted Distributors</h2>
         <p className="text-lg">Discover how our trusted partners deliver high-quality lubricants across the globe. </p>
       </div>
       <p className="mb-8 text-lg">
@@ -35,6 +35,14 @@ const DistributorPage = () => {
       </p>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="rounded-lg border p-6 shadow">
+          <h2 className="mb-2 text-xl font-semibold text-[#2E439A]">East and West Coast USA</h2>
+          <h6 className="text-lg">Khaled el Halabi</h6>
+          <div className="flex w-full justify-between">
+            <p className="">Youssef Trading</p>
+            <p className="text-[blue] underline"> +1 (917) 868-6390 </p>
+          </div>
+        </div>
         {distributors.map((distributor, index) => (
           <div key={index} className="rounded-lg border p-6 shadow">
             <h2 className="mb-2 text-xl font-semibold text-[#2E439A]">{distributor.region}</h2>
