@@ -52,14 +52,12 @@ export function NavigationBar({ items }: NavigationBarProps) {
   ))
   const itemsMarkupMobile = menuITems.map((singleMenuItem) => (
     <li
-    //  className={cn("menu__item", { menu__dropdown: !!singleMenuItem.submenu })} 
-     className={`${cn("menu__item" )} `} 
+      className={`${cn("menu__item" )} `} 
     key={singleMenuItem.text}>
       <NavigationItem showMobile={true} singleMenuItem={singleMenuItem} />
 
       <div className="submenu megamenu__text w-full border-b border-black shadow-sm">
-        {/* <VariantGrid items={singleMenuItem.submenu?.items} variant={singleMenuItem.submenu?.variant} /> */}
-        <div className="submenu__inner flex w-full !flex-col gap-4 md:hidden">
+         <div className="submenu__inner flex w-full !flex-col gap-4 md:hidden">
           <a className="" href={singleMenuItem.href || "#"}>
             <h4 className="mb-20 text-center text-xl underline">See all {singleMenuItem.text}</h4>
           </a>
@@ -72,7 +70,7 @@ export function NavigationBar({ items }: NavigationBarProps) {
     <header className="mega-navbar sticky top-0 z-50 mx-auto my-0 flex w-full flex-wrap content-center px-3 items-center justify-between border-b border-black bg-white py-6">
       <div className="flex justify-between px-4 md:mx-auto md:w-full md:max-w-container-md md:px-0">
         <Link prefetch={false} href="/" className="brand mr-20 hidden items-center text-xl font-bold md:flex">
-          <Image src={'/logo.webp'} alt="logo" width={260} height={40} />
+          <Image src={'/logo.webp'} alt="logo" width={350} height={40} />
         </Link>
 
         <section className="navbar__left flex w-full justify-between md:hidden">
@@ -83,11 +81,12 @@ export function NavigationBar({ items }: NavigationBarProps) {
           </button>
         
           <div className="menu-actions absolute right-4 flex items-center justify-center gap-2 h-[20px]">
-          <Link prefetch={false} href="/" className="brand flex items-center text-xl font-bold">
+          <Link prefetch={false} href="/" className="brand flex items-center text-xl font-bold ">
             {/* Texas Lube */}
           <Image src={'/logo.webp'} alt="logo" width={100} height={70} />
 
           </Link>
+          
           </div>
          </section>
         <section className="navbar__center w-full md:justify-between">
@@ -108,10 +107,11 @@ export function NavigationBar({ items }: NavigationBarProps) {
               {/* mobile */}
               <ul className="mt-10 flex w-full flex-col gap-4 lg:gap-8   md:mt-0 md:w-auto md:hidden flex flex-col md:items-center md:justify-start  ">{itemsMarkupMobile}
               <Link className="flex md:hidden px-[10%]" href={"/contact-us"}>
-                  <Button size="lg" role="link" className="transition-transform bg-transparent border border-white hover:bg-blue-600 text-[18px]">
+                  <Button size="lg" role="link" className="rounded-lg bg-[#BF2B29] !px-[30px] !py-[22px] font-semibold text-white shadow-lg hover:!bg-red-600 hover:!text-white hover:!border-none">
                     Contact Us
                   </Button>
                   </Link>
+                   
               </ul>
                
               <div className="relative ml-auto flex items-center">
@@ -121,8 +121,8 @@ export function NavigationBar({ items }: NavigationBarProps) {
                 {/* <Autocomplete className="mr-6" /> */}
                 <div className="hidden md:flex gap-2  ">
                 <Link href={"/contact-us"}>
-                  <Button size="lg" role="link" className="transition-transform">
-                    Contact Us
+                <Button size="lg" role="link" className="rounded-lg bg-[#BF2B29] !px-[30px] !py-[22px] font-semibold text-white shadow-lg hover:!bg-red-600 hover:!text-white hover:!border-none">
+                Contact Us
                   </Button>
                   </Link>
                   

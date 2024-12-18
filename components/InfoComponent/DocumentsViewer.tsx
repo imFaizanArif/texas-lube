@@ -8,7 +8,6 @@ const DocumentsShow: React.FC = () => {
   const documents = ["/certificate1.jpg",
      "/certificate2.jpg", "/certificate3.jpg", 
      "/certificate4.jpg",    ]
-  const scrollRef = useRef(null) // Ref to the scrollable div
 
   const scrollLeft = () => {
     const scrollableContainer = document.getElementById("scrollable-container")

@@ -1,3 +1,4 @@
+import { Button } from "antd"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -6,7 +7,7 @@ export function HomeTextImageSection() {
     <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-8 p-6 md:flex-row">
       {/* Left Section */}
       <div className="flex flex-col items-start space-y-4 text-left md:w-1/2">
-        <h2 className="mb-5 text-center   font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Our Products & Global Reach</h2>
+        <h2 className=" text-center   font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Our Products & Global Reach</h2>
         <p className="text-base text-gray-600 md:text-lg">
           {" "}
           We offer a comprehensive range of high-quality lubricants, greases, and automotive fluids, including Full Synthetic Motor Oil, Gear Oil, Hydraulic Fluids, and more. All
@@ -14,9 +15,12 @@ export function HomeTextImageSection() {
           distributed worldwide, from North America to the Caribbean, Central America, and the Middle East. Explore our full range of products and see how we can meet your business
           needs.
         </p>
-        <Link href={"/about-us"} className="rounded-lg bg-blue-500 px-6 py-2 text-white transition hover:bg-blue-600">
-          Click here to learn more.
-        </Link>
+       
+        <div className="mt-8 flex justify-center lg:justify-start">
+          <Link href={"/about-us"}>
+          <Button  className="rounded-lg bg-[#BF2B29] !px-[30px] !py-[22px] font-semibold text-white shadow-lg hover:!bg-red-600 hover:!text-white hover:!border-none"> Click here to learn more.</Button>
+          </Link>
+        </div>
       </div>
 
       {/* Right Section */}

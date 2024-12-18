@@ -20,6 +20,8 @@ const ContactUs = () => {
       <div className="mt-8">
         <h2 className="mb-4 text-2xl font-semibold text-[#2E439A]">Our Address</h2>
         <p className="text-lg">7250 Harwin Dr, Ste N, Houston, TX 77063, USA</p>
+        <h2 className="mb-4 text-2xl font-semibold text-[#2E439A]">Contact #</h2>
+        <p className="text-lg">+1 (281) 827-8250 </p>
       </div>
     </div>
   )

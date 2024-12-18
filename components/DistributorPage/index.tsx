@@ -1,4 +1,6 @@
+import { Button } from "antd"
 import BannerComponent from "components/BannerComponent"
+import Link from "next/link"
 import React from "react"
 
 const DistributorPage = () => {
@@ -28,7 +30,7 @@ const DistributorPage = () => {
         <h2 className="mb-4 mt-12 text-2xl font-semibold text-[#2E439A]">Global Network of Trusted Distributors</h2>
         <p className="text-lg">Discover how our trusted partners deliver high-quality lubricants across the globe. </p>
       </div>
-      <p className="mb-8 text-lg">
+      <p className="text-base text-gray-600 md:text-lg mb-[20px]">
         At TEXAS LUBE LLC, we are proud to work with a wide network of trusted distributors around the world. Our partners play a key role in delivering our high-quality
         lubricants, greases, and automotive fluids to businesses and consumers in various regions. With a global presence spanning across the Americas, the Middle East, Africa, and
         beyond, our distributors are committed to providing reliable, top-notch products that meet industry standards.
@@ -52,14 +54,21 @@ const DistributorPage = () => {
       </div>
 
       <div className="mt-12 text-center">
-        <h2 className="mb-4 text-2xl font-semibold">Join Our Network</h2>
-        <p className="mb-6 text-lg">
+        <h2 className="mb-4  text-2xl font-semibold text-[#2E439A]">Join Our Network</h2>
+        <p className="text-base text-gray-600 md:text-lg mb-[20px]">
           We are always seeking reliable and capable partners to expand our global reach. If you are interested in becoming a distributor or would like to know more about our
           distribution opportunities, please contact us.
         </p>
-        <a href="/contact-us" className="rounded-md bg-blue-600 px-4 py-2 text-white shadow hover:bg-blue-700">
-          Contact Us
-        </a>
+
+        <Link href={"/contact-us"}>
+          <Button
+          
+            role="link"
+            className="rounded-lg bg-[#BF2B29] !px-[30px] !py-[22px] font-semibold text-white shadow-lg hover:!border-none hover:!bg-red-600 hover:!text-white"
+          >
+            Contact Us
+          </Button>
+        </Link>
       </div>
     </div>
   )

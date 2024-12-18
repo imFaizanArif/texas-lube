@@ -6,11 +6,9 @@ import { ProductType } from "types"
 
 interface SimilarProductsSectionProps {
   slug: string
-  objectID: string
-}
+ }
 
-export async function SimilarProductsSection({ slug, objectID }: SimilarProductsSectionProps) {
-  const items = await getSimilarProducts(slug, objectID)
+export async function SimilarProductsSection({ slug }: SimilarProductsSectionProps) {
   const { found, similarProducts } = getProductWithId({ id: slug })
 
 
