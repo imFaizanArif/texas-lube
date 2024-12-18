@@ -6,15 +6,21 @@ import Link from "next/link"
 export function Footer() {
   return (
     <footer className="bg-white text-white py-6 border border-top-1">
-    <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <div className="container mx-auto px-[30px] lg:px-[50px] flex flex-col md:flex-row justify-between items-center">
       {/* Left Section: Logo */}
       <div className="mb-4 md:mb-0">
         <Link href="/">
           <Image src={'/API-logo.jpg'} alt="logo" width={250} height={40} />
         </Link>
+        <div className="mt-3">
+ <p className="text-base text-gray-600 md:text-md ">7250 Harwin Dr, Ste N, Houston, TX 77063, USA</p>
+ <p className="text-base text-gray-600 md:text-md ">+1 (281) 827-8250 </p></div>
       </div>
 
       {/* Center Section: Social Media Links */}
+      <div>
+
+
       <div className="flex space-x-6 mb-4 md:mb-0">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <FacebookIcon className="text-xl hover:text-blue-500 transition duration-300" />
@@ -28,6 +34,8 @@ export function Footer() {
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
           <TwitterIcon className="text-xl hover:text-blue-600 transition duration-300" />
         </a>
+      </div>
+
       </div>
 
       {/* Right Section: Page Links */}

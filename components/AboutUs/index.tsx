@@ -47,16 +47,16 @@ const AboutUs = () => {
         <h2 className="mb-4 text-2xl font-semibold text-[#2E439A]">Key Facts About Our Headquarters</h2>
         <ul className="list-inside list-disc text-lg">
           <li>
-            <strong>📍 Location:</strong> 7250 Harwin Dr, Ste N, Houston, Texas, USA
+            <strong> Location:</strong> 7250 Harwin Dr, Ste N, Houston, Texas, USA
           </li>
           <li>
-            <strong>🏭 Industry Expertise:</strong> Over 94 years of family experience in oils and lubricants
+            <strong> Industry Expertise:</strong> Over 94 years of family experience in oils and lubricants
           </li>
           <li>
-            <strong>🌍 Global Reach:</strong> Serving distributors and customers worldwide
+            <strong>Global Reach:</strong> Serving distributors and customers worldwide
           </li>
           <li>
-            <strong>🔬 Innovation:</strong> State-of-the-art blending and manufacturing processes
+            <strong> Innovation:</strong> State-of-the-art blending and manufacturing processes
           </li>
         </ul>
       </div>
