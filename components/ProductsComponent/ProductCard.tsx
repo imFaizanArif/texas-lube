@@ -49,7 +49,7 @@ const convertedNameString =convertSpacesToHyphens(name)
                             </div>
                             <div>
 
-                        <p className="text-gray-800 text-md mt-2">
+                        <p className="text-gray-800 text-md mt-2 line-clamp-4">
                             {text}
                         </p>
                         <button
