@@ -1,6 +1,7 @@
 "use client"
-import { message } from "antd"
+import { Button, message } from "antd"
 import Loader from "components/Loader"
+import Link from "next/link"
 import { useState } from "react"
 
 export default function ContactForm() {
@@ -66,9 +67,16 @@ export default function ContactForm() {
         <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required className="w-full rounded border p-2" />
         <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} required className="w-full rounded border p-2" />
         <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required className="w-full rounded border p-2" rows={5} />
-        <button disabled={loading} type="submit" className="flex h-[40px] w-full items-center justify-center rounded bg-blue-600 p-2 text-white">
+
+        <Button
+          onClick={handleSubmit}
+          disabled={loading}
+          role="link"
+          className="w-full rounded-lg bg-[#BF2B29] !px-[30px] !py-[22px] font-semibold text-white shadow-lg hover:!border-none hover:!bg-red-600 hover:!text-white"
+        >
           {loading ? <Loader /> : "Send"}
-        </button>
+
+        </Button>
       </form>
     </div>
   )
