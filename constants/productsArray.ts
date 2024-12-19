@@ -219,7 +219,6 @@ export const productsJSONData = [
   ILSAC GF-5,
   Chrysler MS6395,
   Ford WSS-M2C945-A (5W-30)`,
-        requirements: ``,
         currency: "$",
         price: 50,
         id: 17,
