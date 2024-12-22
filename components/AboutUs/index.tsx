@@ -1,8 +1,24 @@
 import BannerComponent from "components/BannerComponent"
 import React from "react"
+import { NextSeo } from 'next-seo'
+
 
 const AboutUs = () => {
   return (
+    <>
+    <NextSeo
+        title="About Us - Leading Automobile Lubricants Provider | Texas Lube"
+        description="Learn about Texas Lube, a trusted provider of high-quality automobile lubricants. Discover our history, values, and commitment to excellence."
+        canonical="https://www.texaslube.org/about-us"
+        openGraph={{
+          url: 'https://www.texaslube.org/about-us',
+          title: 'About Us - Leading Automobile Lubricants Provider | Texas Lube',
+          description: 'Learn about Texas Lube, a trusted provider of high-quality automobile lubricants. Discover our history, values, and commitment to excellence.',
+          images: [
+            
+          ],
+        }}
+      />
     <div className="mx-auto max-w-7xl px-6 py-12">
       <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">About Us</h1>
       <div className="mb-5">
@@ -64,6 +80,7 @@ const AboutUs = () => {
         <p className="text-base text-gray-600 md:text-lg mb-[20px]">We continue to innovate and provide the highest standards in lubricants and fluids from Houston, the petroleum capital of the world.</p>
       </div>
     </div>
+    </>
   )
 }
 

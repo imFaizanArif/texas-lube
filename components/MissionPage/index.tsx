@@ -1,8 +1,23 @@
 import BannerComponent from "components/BannerComponent"
 import React from "react"
+import { NextSeo } from 'next-seo'
 
 const MissionVision = () => {
   return (
+    <>
+    <NextSeo
+        title="Our Mission - Driving Sustainability with Quality Lubricants | Texas Lube"
+        description="Learn about Texas Lube's mission to provide sustainable and high-performance lubricants for the automobile industry, driving efficiency and environmental care."
+        canonical="https://www.texaslube.org/our-mission"
+        openGraph={{
+          url: 'https://www.texaslube.org/our-mission',
+          title: 'Our Mission - Driving Sustainability with Quality Lubricants | Texas Lube',
+          description: 'Learn about Texas Lube\'s mission to provide sustainable and high-performance lubricants for the automobile industry, driving efficiency and environmental care.',
+          images: [
+             
+          ],
+        }}
+      />
     <div className="mx-auto max-w-7xl px-6 py-12">
        <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Mission and Vision</h1>
 
@@ -28,6 +43,7 @@ const MissionVision = () => {
         </p>
       </div>
     </div>
+    </>
   )
 }
 

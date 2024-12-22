@@ -5,6 +5,7 @@ import { productsJSONData } from "constants/productsArray"
 import Image from "next/image"
 import type { CollapseProps } from "antd"
 import { Collapse } from "antd"
+import { NextSeo } from 'next-seo'
  
 const ProductsComponent = () => {
   // {
@@ -41,6 +42,20 @@ const ProductsComponent = () => {
   }))
 
   return (
+    <>
+     <NextSeo
+        title="Automobile Lubricants - Browse Our Premium Products | Texas Lube"
+        description="Explore our wide range of premium automobile lubricants at Texas Lube. From engine oils to industrial lubricants, we have solutions for every vehicle and machine."
+        canonical="https://www.texaslube.org/products"
+        openGraph={{
+          url: 'https://www.texaslube.org/products',
+          title: 'Automobile Lubricants - Browse Our Premium Products | Texas Lube',
+          description: 'Explore our wide range of premium automobile lubricants at Texas Lube. From engine oils to industrial lubricants, we have solutions for every vehicle and machine.',
+          images: [
+             
+          ],
+        }}
+      />
     <div className="mx-auto max-w-7xl px-4 sm:px-8">
       <div className="mb-12">
         <h2 className="mb-4 text-2xl font-semibold text-[#2E439A]">High Quality Products</h2>
@@ -78,6 +93,7 @@ const ProductsComponent = () => {
         </div>
       ))} */}
     </div>
+    </>
   )
 }
 

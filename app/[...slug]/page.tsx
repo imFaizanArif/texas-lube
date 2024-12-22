@@ -1,4 +1,4 @@
- 
+
 import ProductViewPage from "components/ProductViewPage";
 
 
@@ -10,10 +10,10 @@ export default async function StaticPage(props: { params: Promise<{ slug: string
 
   const { slug } = params
   console.log('slug', slug);
-  
+  if (!slug[2]) return <>No id  found!</>
   return (
     <div className="relative mx-auto  py-12 md:py-24 xl:px-0">
-     <ProductViewPage id={slug[2]}/>
+      <ProductViewPage id={slug[2]} />
     </div>
   )
 }

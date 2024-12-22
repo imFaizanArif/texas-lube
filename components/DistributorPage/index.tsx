@@ -2,6 +2,7 @@ import { Button } from "antd"
 import BannerComponent from "components/BannerComponent"
 import Link from "next/link"
 import React from "react"
+import { NextSeo } from 'next-seo'
 
 const DistributorPage = () => {
   const distributors = [
@@ -24,6 +25,21 @@ const DistributorPage = () => {
   ]
 
   return (
+    <>
+     <NextSeo
+        title="Our Distributors - Trusted Partners of Texas Lube"
+        description="Meet our trusted distributors who bring Texas Lube's premium automobile lubricants to your region. Learn more about our distributor network."
+        canonical="https://www.texaslube.org/our-distributors"
+        openGraph={{
+          url: 'https://www.texaslube.org/our-distributors',
+          title: 'Our Distributors - Trusted Partners of Texas Lube',
+          description: 'Meet our trusted distributors who bring Texas Lube\'s premium automobile lubricants to your region. Learn more about our distributor network.',
+          images: [
+            
+          ],
+        }}
+      />
+
     <div className="mx-auto max-w-7xl px-6 py-12">
       <h1 className="mb-5 text-center text-xl font-bold text-[#BF2B29] sm:text-[40px] lg:text-center">Our Global Network of Distributors</h1>
       <div className="mb-5">
@@ -71,6 +87,7 @@ const DistributorPage = () => {
         </Link>
       </div>
     </div>
+    </>
   )
 }
 
